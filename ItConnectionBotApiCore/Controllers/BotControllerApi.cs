@@ -1,0 +1,23 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ItConnectionBotApiCore.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class BotControllerApi : ControllerBase
+    {
+
+        private readonly ILogger<BotControllerApi> _logger;
+
+        public BotControllerApi(ILogger<BotControllerApi> logger)
+        {
+            _logger = logger;
+        }
+
+    }
+}
